@@ -15,7 +15,7 @@ db.authenticate().then(() =>
 class mqttHandler {
    constructor() {
       this.mqttClient = null;
-      this.host = "akuaponik.site";
+      this.host = "http://akuaponik.site";
       this.username = "akuaponik12";
       this.password = "@Admin812345678";
    }
