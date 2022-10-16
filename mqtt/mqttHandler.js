@@ -15,9 +15,9 @@ db.authenticate().then(() =>
 class mqttHandler {
    constructor() {
       this.mqttClient = null;
-      this.host = "http://54.218.210.162/";
-      this.username = "admin2020";
-      this.password = "password";
+      this.host = "akuaponik.site";
+      this.username = "akuaponik12";
+      this.password = "@Admin812345678";
    }
 
    connect() {
@@ -176,3 +176,16 @@ class mqttHandler {
 }
 
 module.exports = mqttHandler;
+
+
+// {
+//    "data" : "sensor",
+//    "ph" : "7.0",
+//    "do" ; "",
+//    "tds" : "290",
+//    "watertemp" : "25.80",
+//    "ammonia" : "",
+//    "humidity" : "",
+//    "airtemp" : "",
+//    "time" : "2022-10-14 08:47:00"
+// }
