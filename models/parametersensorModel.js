@@ -21,3 +21,14 @@ const ParameterSensor = db.define(
 );
 
 module.exports = ParameterSensor;
+
+// CREATE TABLE parameter_sensor (
+//     id int NOT NULL AUTO_INCREMENT,
+//     ph_min DECIMAL(5,2),
+//     ph_max DECIMAL(5,2),
+//     suhu_min DECIMAL(5,2),
+//     suhu_max DECIMAL(5,2),
+//     PRIMARY KEY (id)
+//  );
+
+// insert into parameter_sensor(ph_min,ph_max,suhu_min,suhu_max) VALUES (6.0,8.0,23.0,31.0);

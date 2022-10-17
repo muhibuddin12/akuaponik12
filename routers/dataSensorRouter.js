@@ -6,6 +6,7 @@ const Datasensors = require("../models/datasensorsModel");
 const actuatorStatus = require("../models/actuatorstatusModel");
 const ParameterSensor = require("../models/parametersensorModel");
 const Sequelize = require("sequelize");
+const { DECIMAL } = require("sequelize");
 
 const Op = Sequelize.Op;
 
@@ -142,3 +143,4 @@ router.get("/:time", async (req, res) => {
 module.exports = router;
 
 // SELECT * FROM datasensors WHERE time > date_sub(now(), interval 1 week);
+
