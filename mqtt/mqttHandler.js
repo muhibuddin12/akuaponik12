@@ -54,6 +54,7 @@ class mqttHandler {
          var msg = message.toString();
          const data = await JSON.parse(msg);
          if (data.data.toString() == "sensor") {
+            console.log(data);
             const dataSensor = new Datasensors({
                id : null, 
                ph: data.ph.toString(),
@@ -61,8 +62,6 @@ class mqttHandler {
                watertemp: data.watertemp.toString(),
                time: data.time.toString(),
                do : data.do.toString(),
-               watertemp : data.watertemp.toString(),
-               waterlevel : data.waterlevel.toString(),
                ammonia : data.ammonia.toString(),
                humidity : data.humidity.toString(),
                airtemp : data.airtemp.toString()
